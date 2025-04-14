@@ -1,0 +1,165 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+}
+
+/* Navbar */
+.navbar {
+    display: flex; /* Horizontal alignment */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+    background-color: #343a40; /* Dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Sticks to top on scroll */
+    top: 0;
+    z-index: 100; /* Ensure navbar stays above other elements */
+}
+
+.navbar .logo img {
+    max-height: 80px; /* Limit logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px; /* Space between menu items */
+}
+
+.navbar .menu a {
+    text-decoration: none; /* Remove underline */
+    color: #f8f9fa; /* Light text color */
+    font-size: 1rem; /* Standard font size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar .menu a:hover {
+    color: #007bff; /* Highlight link color */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center; /* Center text */
+    padding: 60px 20px;
+    background-image: url('hero-background.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Light text for readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Large heading */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Subheading */
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Workout Section */
+#workouts {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background */
+}
+
+#workouts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.workouts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between workout cards */
+    flex-wrap: wrap; /* Ensure responsive layout */
+}
+
+.workout-card {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 250px;
+    text-align: center;
+}
+
+.workout-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Highlighted heading */
+}
+
+.workout-card p {
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Nutrition Section */
+#nutrition {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Clean white background */
+}
+
+#nutrition h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+#nutrition ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    text-align: center;
+}
+
+#nutrition ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    border-top: 2px solid #dee2e6; /* Border for definition */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline; /* Highlight links */
+}

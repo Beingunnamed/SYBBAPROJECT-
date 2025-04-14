@@ -1,0 +1,98 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black background */
+    color: #f8d568; /* Gold text */
+    line-height: 1.6; /* Consistent line spacing */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #1c1c1c; /* Dark gray for contrast */
+    color: #f8d568; /* Gold text */
+    border-bottom: 3px solid #f8d568; /* Gold underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger heading */
+    margin: 0;
+    text-transform: uppercase; /* All caps for emphasis */
+}
+
+/* Form Styling */
+form {
+    background-color: #1c1c1c; /* Dark gray background for the form */
+    padding: 30px 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Limit form width */
+    margin: 50px auto; /* Center the form horizontally */
+    text-align: center; /* Align form elements to center */
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #f8d568; /* Gold text */
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f8d568; /* Gold border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: black; /* Black input background */
+    color: #f8d568; /* Gold text */
+    font-size: 1rem;
+    /* Center the input text */
+}
+
+form input::placeholder {
+    color: white; /* Lighter gold for placeholder text */
+}
+
+form input:focus {
+    outline: none;
+    border-color: goldenrod; /* Lighter gold on focus */
+    box-shadow: 0 0 5px goldenrod; /* Subtle glow effect */
+}
+
+form button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #f8d568; /* Gold button */
+    color: black; /* Black text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effects */
+}
+
+form button:hover {
+    background-color: lightgrey; /* Brighter gold on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black; /* Dark background */
+    color: white; /* Gold text */
+    border-top: 3px solid #f8d568; /* Gold top border */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

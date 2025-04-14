@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!---->
+<html lang="en"><!--sets language to english-->
+<head><!--has links to cc/js, specifies char encoding/scaling files-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>strengthpedia</title>
+  <link rel="stylesheet" href="calories.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+</head>
+<body>
+<div class="navbar">
+  <div class="logo">
+    <img src="C:\xampp\htdocs\fitness tracker\logo1.jpg" alt="logo"   >
+  </div>
+  <div class="menu" >
+      
+  </div>
+</div>
+</body>
+<body>
+<main><!--main content area-->
+
+   
+    <section id="input-form"> 
+      <h2>Add Food Item</h2><!--section title-->
+      <form id="food-form"> <!--form for inputting food items-->
+        <input type="text" id="food-name" placeholder="Food Name" required>
+    <!--text input for food name-->
+        <input type="number" id="food-calories" placeholder="Calories" required>
+    <!--number input for calories-->
+        <button type="submit">Add Food</button>
+    <!--submit button to add foot item-->
+      </form>
+    </section>
+
+    <section id="food-list"> 
+      <h2>Logged Food Items</h2>
+      <ul id="food-items"></ul><!--displays logged food items-->
+      <p>Total Calories: <span id="total-calories">0</span></p>
+      <!--shows total calories-->
+    </section>
+
+    <section id="calorie-chart"> <!--section for calorie intake chart-->
+      <h2>Calorie Intake Chart</h2>
+      <canvas id="calorieChart"></canvas>
+      <!--canvas element for chart.js-->
+    </section>
+
+  </main>
+  <script src="script.js"></script> 
+</body>
+</html>

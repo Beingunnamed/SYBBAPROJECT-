@@ -1,0 +1,101 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    background-color: #000000; /* Black background */
+    color: #f8d568; /* Gold text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Subtle black for contrast */
+    color: #f8d568; /* Gold text */
+    border-bottom: 3px solid #f8d568; /* Gold underline for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+
+header h1 {
+    font-size: 3rem; /* Bold and noticeable */
+    text-transform: uppercase; /* Standout look */
+    margin: 0;
+}
+
+/* Section Styling */
+section {
+    display: flex;
+    justify-content: center; /* Center-align content horizontally */
+    align-items: center; /* Center-align content vertically */
+    height: 70vh; /* Occupy most of the page */
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    background-color: #1c1c1c; /* Slightly lighter black for contrast */
+    padding: 30px 40px;
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Add depth */
+    max-width: 400px; /* Restrict the form size */
+    width: 100%; /* Responsive width */
+}
+
+form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block; /* Block-level for clear separation */
+    margin-bottom: 10px; /* Space below labels */
+    text-align: left; /* Align labels to the left for better UX */
+}
+
+form input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Add padding for comfort */
+    margin-bottom: 20px; /* Space between fields */
+    border: 1px solid #f8d568; /* Gold border for visibility */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000000; /* Black background for inputs */
+    color: #f8d568; /* Gold text color */
+    font-size: 1rem;
+}
+
+form input::placeholder {
+    color: #a98634; /* Lighter gold for placeholders */
+}
+
+form button {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Comfortable button size */
+    background-color: #f8d568; /* Gold background */
+    color: #000000; /* Black text for contrast */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+form button:hover {
+    background-color: #ffd700; /* Brighter gold on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1c; /* Subtle black for footer */
+    color: #f8d568; /* Gold text */
+    border-top: 3px solid #f8d568; /* Gold top border for style */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem; /* Slightly smaller font for the footer */
+}
+

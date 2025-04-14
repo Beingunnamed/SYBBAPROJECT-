@@ -1,0 +1,284 @@
+body { /*sets overall styling for the page*/
+    font-family:  sans-serif  ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgrey;
+  }
+  
+  header { /*styles header with the variables established below*/
+    background-color: black;
+    color: goldenrod;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    align-items:flex-start;
+    left:20%;
+  }
+  
+  main { /*styles main content (below header ig)*/
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    /* Styling for Add Food Item Form Section */
+#input-form {
+  background: linear-gradient(145deg, #f9fbe7, #fffde7);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+#input-form h2 {
+  text-align: center;
+  color: #f57f17;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#food-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#food-form input {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#food-form input:focus {
+  border-color: #f9a825;
+  outline: none;
+  box-shadow: 0 0 5px rgba(249, 168, 37, 0.5);
+}
+
+#food-form button {
+  width: 94%;
+  max-width: 400px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f57f17;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#food-form button:hover {
+  background-color: #ffb300;
+  transform: scale(1.05);
+}
+
+#food-form button:active {
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #input-form {
+      padding: 15px;
+  }
+
+  #input-form h2 {
+      font-size: 20px;
+  }
+
+  #food-form input, #food-form button {
+      font-size: 16px;
+  }
+}
+
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod; /* Dark background for the menu */
+    padding: 5px 2px;
+  }
+  
+  .menu a {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .menu a:hover {
+    color: #FFD700; /* Change text color on hover */
+  }
+  
+  /* Styling for Logged Food Items Section */
+#food-list {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Verdana', sans-serif;
+}
+
+#food-list h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+#food-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#food-items li {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#food-items li:hover {
+  background-color: #81c784;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+#food-list p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  color: #388e3c;
+}
+
+#total-calories {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #food-list {
+      padding: 15px;
+  }
+
+  #food-list h2 {
+      font-size: 20px;
+  }
+
+  #food-list p {
+      font-size: 16px;
+  }
+}
+
+
+  #input-form { /*adds a margin to the bottom of the input form sectiopn*/
+    margin-bottom: 2em;
+  }
+  
+  #food-form { /*styles the form */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #food-form input, /*styles input & button*/
+  #food-form button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+  }
+  
+  #food-list ul { /*removes list styling and padding*/
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #food-list li { /*styles list items, li for list*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #food-list li button { /*adds margin to left of buttons*/
+    margin-left: 0.5em;
+  }
+  
+  #food-list p { /*bolds the paragraph material*/
+    font-weight: bold;
+  }
+  
+/* Styling for the Calorie Intake Chart Section */
+#calorie-chart {
+  background: linear-gradient(45deg, #f3f3f3, #e0e0e0);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Arial', sans-serif;
+}
+
+#calorie-chart h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#calorie-chart canvas {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Hover effect for the canvas */
+#calorie-chart canvas:hover {
+  border-color: #ff6347;
+  transition: 0.3s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #calorie-chart {
+      padding: 15px;
+  }
+
+  #calorie-chart h2 {
+      font-size: 20px;
+  }
+}
+
+
+
+ 

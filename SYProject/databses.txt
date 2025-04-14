@@ -1,0 +1,13 @@
+
+Create a MySQL database named fitness_tracker .
+Create a users table with the following fields:
+id (INT, AUTO_INCREMENT, PRIMARY KEY)
+username (VARCHAR)
+password (VARCHAR)
+Create a bmi_history table with the following fields:
+id (INT, AUTO_INCREMENT, PRIMARY KEY)
+user_id (INT, FOREIGN KEY referencing users.id)
+bmi_value (FLOAT)
+calculation_date (DATETIME)
+Access Control:
+

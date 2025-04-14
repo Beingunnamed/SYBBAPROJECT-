@@ -1,0 +1,116 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Black background */
+    color: #f8d568; /* Gold text */
+    line-height: 1.6; /* Consistent line spacing */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #1c1c1c; /* Dark gray for contrast */
+    color: #f8d568; /* Gold text */
+    border-bottom: 3px solid #f8d568; /* Gold underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger heading */
+    margin: 0;
+    text-transform: uppercase; /* All caps for emphasis */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8d568; /* Gold links */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Slightly brighter color on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f8d568; /* Gold text */
+    text-transform: uppercase; /* For emphasis */
+}
+
+article {
+    background-color: #1c1c1c; /* Dark gray article background */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); /* Depth effect */
+    width: 100%;
+    max-width: 600px; /* Responsive width */
+}
+
+article h3 {
+    color: #f8d568; /* Gold text for subheadings */
+    font-size: 1.8rem;
+}
+
+article p {
+    font-size: 1.2rem;
+    color: white; /* Clear white text for descriptions */
+}
+
+article img {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded image corners */
+}
+
+article video {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px; /* Rounded corners for video */
+}
+
+article video::-webkit-media-controls {
+    display: none; /* Hide media controls for a cleaner look */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black; /* Black background */
+    color: white; /* Gold text */
+    border-top: 3px solid #f8d568; /* Gold top border */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

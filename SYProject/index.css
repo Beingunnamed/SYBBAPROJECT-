@@ -1,0 +1,269 @@
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #f8d568; /* Gold text color */
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center-align items vertically */
+    padding: 20px 40px; /* Increased padding for a bigger navbar */
+    background-color: black; /* Subtle black background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.navbar .logo img {
+    max-height: 500px; /* Larger logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.navbar .menu {
+    display: flex; /* Align menu items in a row */
+    gap: 30px; /* Space between menu items */
+}
+
+.navbar .menu a {
+    text-decoration: none; /* Remove underline */
+    color: #f8d568; /* Gold color for text */
+    font-size: 2.2rem; /* Larger font size for the links */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar .menu a:hover {
+    color: #ffd700; /* Brighter gold on hover */
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+/* Updated Image Section Styling */
+.image {
+    display: flex;
+    justify-content: center; /* Center-align the image */
+    margin-bottom: 10px; /* Add spacing below the image */
+    padding-top: 0; /* Remove top padding */
+    background-color: #1c1c1c; /* Subtle black background */
+    border-radius: 8px; /* Rounded edges for a refined look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.image img {
+    max-width: 500px; /* Make the image larger */
+    height: auto; /* Maintain aspect ratio */
+    border: 3px solid #f8d568; /* Gold border for emphasis */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.image img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+
+
+.hero {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    background-image: url('hero-background.jpg'); /* Replace with your background image */
+    background-size: cover; /* Scale the background image to cover the section */
+    background-position: center; /* Center the background image */
+    color: #f8d568; /* Gold text for elegance */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow for contrast */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Larger main heading */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Capitalize the text */
+}
+
+.hero h2 {
+    font-size: 2rem; /* Increase the subheading size */
+    margin-bottom: 20px;
+    font-weight: lighter; /* Softer font weight for balance */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Larger paragraph font */
+    margin-bottom: 30px;
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Larger button for emphasis */
+    background-color: #f8d568; /* Gold button background */
+    color: #000000; /* Black text for contrast */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5rem; /* Larger font for the button */
+    font-weight: bold; /* Emphasize the button text */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.cta-button:hover {
+    background-color: #ffd700; /* Brighter gold on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #f8d568; /* Gold */
+    text-transform: uppercase;
+    border-bottom: 2px solid #f8d568; /* Gold underline */
+    display: inline-block;
+}
+
+
+#workouts {
+    text-align: center; /* Center-align text */
+    padding: 50px 20px; /* Larger padding for spacious layout */
+    background-color: black; /* Subtle black background for sophistication */
+    color: #f8d568; /* Gold text for elegance */
+}
+
+#workouts h2 {
+    font-size: 3rem; /* Larger heading size */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Capitalize the heading */
+    border-bottom: 3px solid #f8d568; /* Gold underline for emphasis */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#workouts p {
+    font-size: 1.5rem; /* Larger text for better readability */
+    margin-bottom: 40px; /* Space between text and cards */
+}
+
+.workouts-container {
+    display: flex;
+    justify-content: center; /* Center align cards */
+    gap: 30px; /* Space between workout cards */
+    flex-wrap: wrap; /* Enable cards to stack on smaller screens */
+    padding: 20px;
+}
+
+.workout-card {
+    background-color: #1c1c1c; /* Subtle black background */
+    color: #f8d568; /* Gold text for consistency */
+    border: 1px solid #f8d568; /* Gold border for style */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    width: 300px; /* Set card width for consistency */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.workout-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.workout-card img {
+    border-radius: 8px; /* Slightly rounded corners for images */
+    margin-bottom: 15px;
+    max-height: 180px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio of images */
+}
+
+.workout-card h3 {
+    font-size: 1.8rem; /* Larger subheading */
+    margin-bottom: 10px;
+}
+
+.workout-card p {
+    font-size: 1rem; /* Standard text size */
+    line-height: 1.6; /* Improve readability */
+}
+
+
+
+#nutrition {
+    text-align: center; /* Center-align text */
+    padding: 60px 20px; /* Add ample spacing for an attractive layout */
+    background-color: black; /* Subtle black background */
+    color: #f8d568; /* Gold text for a luxurious feel */
+}
+
+#nutrition h2 {
+    font-size: 3rem; /* Increase the size of the section title */
+    margin-bottom: 20px; /* Space below the heading */
+    text-transform: uppercase; /* Make the heading stand out */
+    border-bottom: 3px solid #f8d568; /* Add a gold underline for emphasis */
+    display: inline-block;
+    padding-bottom: 10px; /* Add padding below the heading */
+}
+
+#nutrition p {
+    font-size: 1.9rem; /* Larger text for better readability */
+    margin-bottom: 30px; /* Space between paragraph and list */
+    max-width: 800px; /* Restrict the width for clean readability */
+    margin-left: auto; /* Center-align block content */
+    margin-right: auto;
+}
+
+#nutrition ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Inline block to align items centrally */
+    text-align: left; /* Align text within the list items */
+    color: #f8d568;
+}
+
+#nutrition ul li {
+    font-size: 1.2rem; /* Larger font size for better visibility */
+    margin-bottom: 10px; /* Space between list items */
+    background-color: #000000; /* Add subtle black backgrounds to list items */
+    padding: 10px 20px; /* Add spacing within list items */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    border: 1px solid #f8d568; /* Gold border for each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth with shadows */
+}
+
+#nutrition ul li:hover {
+    background-color: #f8d568; /* Highlight item with gold background on hover */
+    color: #000000; /* Change text color to black for contrast */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: black;
+    color: #f8d568;
+    border-top: 2px solid #f8d568;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: #f8d568;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #ffd700;
+}
